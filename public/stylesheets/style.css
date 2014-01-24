@@ -181,12 +181,12 @@ a.fancy-link:hover {
 .content section a {
   display: block;
   font-family: 'proxima_novabold';
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   height: 50px;
   line-height: 48px;
   font-size: 1.2rem;
-  margin-left: 110px;
+  margin-left: 90px;
 }
 
 video {
