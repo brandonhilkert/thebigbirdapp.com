@@ -114,9 +114,18 @@ header nav ul li {
   font-family: 'proxima_novabold';
 }
 
+@media screen and (max-width: 500px){
+  header nav {
+    position: relative;
+    width: 100px;
+    margin: 20px auto;
+  }
+}
+
+
 a.fancy-link {
   text-decoration: none;
-  float: left;
+  display: inline-block;
   padding: 0 10px;
   height: 36px;
   line-height: 35px;
@@ -164,6 +173,13 @@ a.fancy-link:hover {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 500px){
+  .content {
+    position: relative;
+    margin-top: 50px;
+  }
+}
+
 .content section {
   display: table-cell;
   z-index: 10;
@@ -186,7 +202,6 @@ a.fancy-link:hover {
   height: 50px;
   line-height: 48px;
   font-size: 1.2rem;
-  margin-left: 90px;
 }
 
 video {
