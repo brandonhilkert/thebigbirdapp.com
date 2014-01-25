@@ -161,10 +161,10 @@ a.fancy-link:hover {
   visibility: visible;
   z-index: 10;
   height: 100%;
-  -webkit-transition: opacity 900ms ease;
-  -moz-transition: opacity 900ms ease;
-  -o-transition: opacity 900ms ease;
-  transition: opacity 900ms ease;
+  -webkit-transition: opacity 2000ms ease;
+  -moz-transition: opacity 2000ms ease;
+  -o-transition: opacity 2000ms ease;
+  transition: opacity 2000ms ease;
 }
 
 .content {
