@@ -213,6 +213,12 @@ video {
   min-height: 100%;
 }
 
+@media screen and (max-width: 650px){
+  video {
+    display: none;
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -225,4 +231,22 @@ video {
   background: -o-linear-gradient(45deg, #000000 12%,#8F8905 90%);
   background: linear-gradient(45deg, #000000 12%,#8F8905 90%);
   opacity: 0.85;
+}
+
+.background {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  background: url('../images/bigbird-video.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 650px){
+  .background {
+    display: block;
+  }
 }
