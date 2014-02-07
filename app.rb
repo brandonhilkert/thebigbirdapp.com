@@ -1,17 +1,14 @@
 require 'bundler'
 Bundler.require
 
-configure :production do
-  set :start_time, Time.now
+set :start_time, Time.now
 
-  before do
-    last_modified settings.start_time
-    etag settings.start_time.to_i
-    cache_control
-  end
+before do
+  last_modified settings.start_time
+  etag settings.start_time.to_i
+  cache_control
 end
 
-
 get '/' do
-  erb :index
+  send_file "views/index.html"
 end
