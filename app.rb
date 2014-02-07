@@ -7,8 +7,10 @@ configure :production do
   before do
     last_modified settings.start_time
     etag settings.start_time.to_i
+    cache_control
   end
 end
+
 
 get '/' do
   erb :index
